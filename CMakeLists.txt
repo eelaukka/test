@@ -205,8 +205,8 @@ find_library(OPENVR_LIBRARIES
   NAMES
     openvr_api
   PATHS
-    ${CMAKE_CURRENT_SOURCE_DIR}/../bin
-    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/openvr/bin
+    ${CMAKE_CURRENT_SOURCE_DIR}/openvr/lib
   PATH_SUFFIXES
     osx32
     linux64
@@ -214,7 +214,7 @@ find_library(OPENVR_LIBRARIES
   NO_DEFAULT_PATH
   NO_CMAKE_FIND_ROOT_PATH
 )
-set(OPENVR_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../headers)
+set(OPENVR_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/openvr/headers)
 
 
 # -----------------------------------------------------------------------------
@@ -250,3 +250,4 @@ add_subdirectory(helloworldoverlay)
 add_subdirectory(tracked_camera_openvr_sample)
 
 # -----------------------------------------------------------------------------
+
